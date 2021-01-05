@@ -69,7 +69,7 @@ abstract class Client {
   @nonVirtual
   final bool debug;
 
-  // hexString .
+  /// hexString dump hex to strings
   static String hexString(List<int> data) {
     var sb = StringBuffer();
     data.forEach((f) {
@@ -79,6 +79,7 @@ abstract class Client {
     return sb.toString();
   }
 
+  /// encodeFrame encode packet
   Uint8List encodeFrame(int id, Uint8List b) {
     var buf = Uint8List(10);
     var bd = ByteData.view(buf.buffer);
@@ -93,6 +94,7 @@ abstract class Client {
     return Uint8List.fromList(buf.toList() + b.toList());
   }
 
+  /// decodeHeader decode frame header
   Header decodeHeader(Uint8List b) {
     if (b.length < 10) {
       return null;
@@ -118,7 +120,12 @@ abstract class Client {
         frameType: ftype);
   }
 
+  /// connect make connect to the ebox
   Future<Client> connect();
+
+  /// send send packet and return a future containing the response
   Future<ApiResponse> send(ApiOperation code, $pb.GeneratedMessage m);
+
+  /// close close client
   void close();
 }

@@ -25,6 +25,7 @@ class Native extends Client {
   var _recvCnt = 0;
   StreamSubscription<Uint8List> _sub;
 
+  // _send raw send
   Future<ApiResponse> _send(ApiOperation code, $pb.GeneratedMessage m) {
     var _cpl = Completer<ApiResponse>();
     _connCompl.future.then((value) {
@@ -43,6 +44,7 @@ class Native extends Client {
     return _cpl.future;
   }
 
+  /// _sendAuth send authentication
   Future<ApiResponse> _sendAuth() async {
     var req = AuthenticationRequest();
     req.uid = uid;

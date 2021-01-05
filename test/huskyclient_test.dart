@@ -9,8 +9,12 @@ void main() {
       awesome = Native();
     });
 
-    test('First Test', () {
-      //expect(awesome.isAwesome, isTrue);
+    test('First Test', () async {
+      try {
+        await awesome.connect();
+      } catch (e) {
+        print(e);
+      }
     });
   });
 }
