@@ -12,7 +12,8 @@ void main() async {
       hostAddr: '68.0.0.7:7777',
       token:
           'MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdmYqKy6699SFbaLD4fNBHlT2pBc/cYC7MdoYPlldh+XGiu0yfdJTZ5GpSf+d6HT5nuuM4EwIoM/fjhkZiHUcBA==',
-      uid: Int64(292));
+      uid: Int64(292),
+      debug: true);
 
   try {
     await client.connect();

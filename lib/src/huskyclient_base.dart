@@ -41,6 +41,7 @@ abstract class Client {
     this.timeoutConn = const Duration(seconds: 5),
     this.timeoutSend = const Duration(seconds: 5),
     this.timeoutRecv = const Duration(seconds: 5),
+    this.debug = false,
   });
 
   @nonVirtual
@@ -65,6 +66,8 @@ abstract class Client {
   final Duration timeoutSend;
   @nonVirtual
   final Duration timeoutRecv;
+  @nonVirtual
+  final bool debug;
 
   // hexString .
   static String hexString(List<int> data) {
@@ -102,8 +105,10 @@ abstract class Client {
     var ftype = bd.getInt8(5);
     var flag = bd.getInt8(6);
     var remain = bd.getInt32(6, Endian.big) & 0x00FFFFFF;
-    print(
-        'version: $version, ftype: $ftype, id: $id, flag: $flag, remain: $remain \n');
+    if (debug) {
+      print(
+          'header: version: $version, ftype: $ftype, id: $id, flag: $flag, remain: $remain \n');
+    }
 
     return Header(
         id: id,

@@ -1,6 +1,6 @@
 name: huskyclient
 description: dart husky client library for ebox
-version: 0.0.3
+version: 0.0.4
 homepage: https://gitlab.etsus.net/dart/huskyclient
 
 environment:

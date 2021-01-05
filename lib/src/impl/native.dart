@@ -11,11 +11,8 @@ class Native extends Client {
     String hostAddr,
     String token,
     Int64 uid,
-  }) : super(
-          hostAddr: hostAddr,
-          token: token,
-          uid: uid,
-        );
+    bool debug = false,
+  }) : super(hostAddr: hostAddr, token: token, uid: uid, debug: debug);
 
   Socket _socket;
   final List<int> _cache = <int>[];
@@ -25,6 +22,7 @@ class Native extends Client {
   int _streamId = 0;
   final _cplMap = <int, Completer<ApiResponse>>{};
   var _remains = 0;
+  var _recvCnt = 0;
   StreamSubscription<Uint8List> _sub;
 
   Future<ApiResponse> _send(ApiOperation code, $pb.GeneratedMessage m) {
@@ -81,7 +79,11 @@ class Native extends Client {
       });
 
       _sub = value.listen((event) {
-        // print(event);
+        if (debug) {
+          _recvCnt++;
+          print('recv [${_recvCnt}]: ${Client.hexString(event)}\n');
+        }
+
         int id;
         try {
           var _conv = List<int>.from(event);
@@ -104,9 +106,12 @@ class Native extends Client {
           }
 
           var res = ApiResponse.fromBuffer(_cache.sublist(0, _remains));
-          if (id == 1) {
-            //print('auth: $res');
+          if (debug) {
+            if (id == 1) {
+              print('auth: $res\n');
+            }
           }
+
           _cplMap[id].complete(res);
           _cplMap.remove(id);
           _cache.removeRange(0, _remains);
@@ -132,7 +137,9 @@ class Native extends Client {
     }, onError: (err) {
       // _authCompl.completeError(err);
       // _connCompl.completeError(err);
-      // print('err1: $err');
+      if (debug) {
+        print('connection error: $err\n');
+      }
       throw err;
     });
 
