@@ -2,7 +2,7 @@ name: huskyclient
 description: >- 
   dart husky client library for ebox.
   currently only dart native is supported. but vpn version is under workiing.
-version: 0.0.4
+version: 0.0.5
 homepage: http://gitlab.etsus.net/dart/huskyclient
 
 environment:
