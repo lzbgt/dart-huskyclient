@@ -1,3 +1,3 @@
-## 0.0.2
+## 0.0.3
 
-- comments and homepage
+- formats
