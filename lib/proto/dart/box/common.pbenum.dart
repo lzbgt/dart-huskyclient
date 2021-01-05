@@ -10,17 +10,25 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class Order extends $pb.ProtobufEnum {
-  static const Order Desc = Order._(0, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'Desc');
-  static const Order Asc = Order._(1, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'Asc');
+  static const Order Desc = Order._(
+      0,
+      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+          ? ''
+          : 'Desc');
+  static const Order Asc = Order._(
+      1,
+      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
+          ? ''
+          : 'Asc');
 
-  static const $core.List<Order> values = <Order> [
+  static const $core.List<Order> values = <Order>[
     Desc,
     Asc,
   ];
 
-  static final $core.Map<$core.int, Order> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, Order> _byValue =
+      $pb.ProtobufEnum.initByValue(values);
   static Order valueOf($core.int value) => _byValue[value];
 
   const Order._($core.int v, $core.String n) : super(v, n);
 }
-
