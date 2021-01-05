@@ -112,17 +112,21 @@ class Native extends Client {
           _cache.removeRange(0, _remains);
           _remains = 0;
         } catch (e) {
-          if (id != null) {
-            _cplMap[id].completeError(e);
+          // if (id != null) {
+          //   // complete only the corresponding future with error
+          //   _cplMap[id].completeError(e);
+          // } else {
+          // completes all pending futures with error
+          if (_cplMap.isNotEmpty) {
+            _cplMap.values.forEach((element) {
+              element.completeError(e);
+            });
+            close();
           } else {
-            // let any future completes with error
-            if (_cplMap.isNotEmpty) {
-              _cplMap.values.first.completeError(e);
-            } else {
-              rethrow;
-            }
+            close();
+            rethrow;
           }
-          close();
+          // }
         }
       });
     }, onError: (err) {

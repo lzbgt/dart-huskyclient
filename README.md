@@ -6,7 +6,7 @@ A library for ebox husky protocol client.
 dependencies:
   huskyclient:
     git:
-      url: your_git_url
+      url: git@gitlab.etsus.net
       ref: master
 ```
 
