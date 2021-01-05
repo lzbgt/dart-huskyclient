@@ -12,13 +12,7 @@ const DeviceInfo$json = const {
     const {'1': 'mac', '3': 2, '4': 1, '5': 9, '10': 'mac'},
     const {'1': 'seq_num', '3': 3, '4': 1, '5': 9, '10': 'seqNum'},
     const {'1': 'version', '3': 4, '4': 1, '5': 9, '10': 'version'},
-    const {
-      '1': 'firmware_version',
-      '3': 5,
-      '4': 1,
-      '5': 9,
-      '10': 'firmwareVersion'
-    },
+    const {'1': 'firmware_version', '3': 5, '4': 1, '5': 9, '10': 'firmwareVersion'},
     const {'1': 'device_id', '3': 6, '4': 1, '5': 9, '10': 'deviceId'},
   ],
 };
@@ -26,14 +20,7 @@ const DeviceInfo$json = const {
 const GetDeviceInfoResponse$json = const {
   '1': 'GetDeviceInfoResponse',
   '2': const [
-    const {
-      '1': 'device_info',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.DeviceInfo',
-      '10': 'deviceInfo'
-    },
+    const {'1': 'device_info', '3': 1, '4': 1, '5': 11, '6': '.etsme.ebox.DeviceInfo', '10': 'deviceInfo'},
   ],
 };
 
@@ -48,13 +35,7 @@ const MonitorResponse$json = const {
   '1': 'MonitorResponse',
   '2': const [
     const {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
-    const {
-      '1': 'runtime_millisecond',
-      '3': 2,
-      '4': 1,
-      '5': 3,
-      '10': 'runtimeMillisecond'
-    },
+    const {'1': 'runtime_millisecond', '3': 2, '4': 1, '5': 3, '10': 'runtimeMillisecond'},
   ],
 };
 
@@ -69,32 +50,11 @@ const GetBindCodeResponse$json = const {
 const ListCapacityResponse$json = const {
   '1': 'ListCapacityResponse',
   '2': const [
-    const {
-      '1': 'file',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.ListCapacityResponse.Item',
-      '10': 'file'
-    },
-    const {
-      '1': 'manage',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.ListCapacityResponse.Item',
-      '10': 'manage'
-    },
+    const {'1': 'file', '3': 1, '4': 3, '5': 11, '6': '.etsme.ebox.ListCapacityResponse.Item', '10': 'file'},
+    const {'1': 'manage', '3': 2, '4': 3, '5': 11, '6': '.etsme.ebox.ListCapacityResponse.Item', '10': 'manage'},
     const {'1': 'total_size', '3': 3, '4': 1, '5': 3, '10': 'totalSize'},
     const {'1': 'used_size', '3': 4, '4': 1, '5': 3, '10': 'usedSize'},
-    const {
-      '1': 'other',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.ListCapacityResponse.Item',
-      '10': 'other'
-    },
+    const {'1': 'other', '3': 5, '4': 1, '5': 11, '6': '.etsme.ebox.ListCapacityResponse.Item', '10': 'other'},
   ],
   '3': const [ListCapacityResponse_Item$json],
   '4': const [ListCapacityResponse_Type$json],
@@ -106,14 +66,7 @@ const ListCapacityResponse_Item$json = const {
     const {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'color', '3': 2, '4': 1, '5': 5, '10': 'color'},
     const {'1': 'size', '3': 3, '4': 1, '5': 3, '10': 'size'},
-    const {
-      '1': 'type',
-      '3': 4,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.ListCapacityResponse.Type',
-      '10': 'type'
-    },
+    const {'1': 'type', '3': 4, '4': 1, '5': 14, '6': '.etsme.ebox.ListCapacityResponse.Type', '10': 'type'},
   ],
 };
 
@@ -134,27 +87,14 @@ const UpgradeRequest$json = const {
   '1': 'UpgradeRequest',
   '2': const [
     const {'1': 'version', '3': 1, '4': 1, '5': 9, '10': 'version'},
-    const {
-      '1': 'upgradeAddress',
-      '3': 2,
-      '4': 1,
-      '5': 9,
-      '10': 'upgradeAddress'
-    },
+    const {'1': 'upgradeAddress', '3': 2, '4': 1, '5': 9, '10': 'upgradeAddress'},
   ],
 };
 
 const UpgradeResponse$json = const {
   '1': 'UpgradeResponse',
   '2': const [
-    const {
-      '1': 'result',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.UpgradeResponse.Result',
-      '10': 'result'
-    },
+    const {'1': 'result', '3': 1, '4': 1, '5': 14, '6': '.etsme.ebox.UpgradeResponse.Result', '10': 'result'},
   ],
   '4': const [UpgradeResponse_Result$json],
 };
@@ -167,9 +107,17 @@ const UpgradeResponse_Result$json = const {
   ],
 };
 
+const GetVersionResponse$json = const {
+  '1': 'GetVersionResponse',
+  '2': const [
+    const {'1': 'version', '3': 1, '4': 1, '5': 9, '10': 'version'},
+  ],
+};
+
 const GetUpgradeStatusResponse$json = const {
   '1': 'GetUpgradeStatusResponse',
   '2': const [
     const {'1': 'process', '3': 1, '4': 1, '5': 5, '10': 'process'},
   ],
 };
+

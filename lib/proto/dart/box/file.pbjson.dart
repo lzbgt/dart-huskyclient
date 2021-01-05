@@ -35,21 +35,16 @@ const UploadCompleteRequest$json = const {
     const {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'width', '3': 4, '4': 1, '5': 5, '10': 'width'},
     const {'1': 'height', '3': 5, '4': 1, '5': 5, '10': 'height'},
-    const {
-      '1': 'play_millisecond',
-      '3': 6,
-      '4': 1,
-      '5': 3,
-      '10': 'playMillisecond'
-    },
+    const {'1': 'play_millisecond', '3': 6, '4': 1, '5': 3, '10': 'playMillisecond'},
     const {'1': 'byte_size', '3': 7, '4': 1, '5': 3, '10': 'byteSize'},
-    const {
-      '1': 'source',
-      '3': 8,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.file.FileSource',
-      '10': 'source'
-    },
+    const {'1': 'source', '3': 8, '4': 1, '5': 14, '6': '.etsme.ebox.file.FileSource', '10': 'source'},
   ],
 };
+
+const DeleteFileRequest$json = const {
+  '1': 'DeleteFileRequest',
+  '2': const [
+    const {'1': 'id', '3': 1, '4': 3, '5': 9, '10': 'id'},
+  ],
+};
+

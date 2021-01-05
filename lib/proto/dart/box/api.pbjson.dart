@@ -51,20 +51,15 @@ const ApiOperation$json = const {
     const {'1': 'UploadCompleteOp', '2': 76},
     const {'1': 'KickOutConversationMemberOp', '2': 77},
     const {'1': 'ListMessageAttachmentOp', '2': 78},
+    const {'1': 'GetVersionOp', '2': 79},
+    const {'1': 'DeleteFileOp', '2': 80},
   ],
 };
 
 const ApiRequest$json = const {
   '1': 'ApiRequest',
   '2': const [
-    const {
-      '1': 'operation',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.ApiOperation',
-      '10': 'operation'
-    },
+    const {'1': 'operation', '3': 1, '4': 1, '5': 14, '6': '.etsme.ebox.ApiOperation', '10': 'operation'},
     const {'1': 'content', '3': 2, '4': 1, '5': 12, '10': 'content'},
     const {'1': 'serverVersion', '3': 3, '4': 1, '5': 5, '10': 'serverVersion'},
     const {'1': 'from', '3': 4, '4': 1, '5': 3, '10': 'from'},
@@ -75,17 +70,11 @@ const ApiRequest$json = const {
 const ApiResponse$json = const {
   '1': 'ApiResponse',
   '2': const [
-    const {
-      '1': 'operation',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.ApiOperation',
-      '10': 'operation'
-    },
+    const {'1': 'operation', '3': 1, '4': 1, '5': 14, '6': '.etsme.ebox.ApiOperation', '10': 'operation'},
     const {'1': 'content', '3': 2, '4': 1, '5': 12, '10': 'content'},
     const {'1': 'message', '3': 3, '4': 1, '5': 9, '10': 'message'},
     const {'1': 'code', '3': 4, '4': 1, '5': 5, '10': 'code'},
     const {'1': 'errDetail', '3': 5, '4': 1, '5': 9, '10': 'errDetail'},
   ],
 };
+

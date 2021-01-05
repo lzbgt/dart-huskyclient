@@ -8,65 +8,20 @@
 const Conversation$json = const {
   '1': 'Conversation',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
-    const {
-      '1': 'current_user',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.ConversationMember',
-      '10': 'currentUser'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
+    const {'1': 'current_user', '3': 2, '4': 1, '5': 11, '6': '.etsme.ebox.ConversationMember', '10': 'currentUser'},
     const {'1': 'avatar_url', '3': 5, '4': 1, '5': 9, '10': 'avatarUrl'},
     const {'1': 'group_name', '3': 7, '4': 1, '5': 9, '10': 'groupName'},
     const {'1': 'member_count', '3': 8, '4': 1, '5': 5, '10': 'memberCount'},
     const {'1': 'unread_count', '3': 9, '4': 1, '5': 5, '10': 'unreadCount'},
-    const {
-      '1': 'type',
-      '3': 10,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.Conversation.Type',
-      '10': 'type'
-    },
-    const {
-      '1': 'current_message_text',
-      '3': 11,
-      '4': 1,
-      '5': 9,
-      '10': 'currentMessageText'
-    },
-    const {
-      '1': 'current_message_id',
-      '3': 12,
-      '4': 1,
-      '5': 9,
-      '10': 'currentMessageId'
-    },
-    const {
-      '1': 'current_message_time',
-      '3': 13,
-      '4': 1,
-      '5': 3,
-      '10': 'currentMessageTime'
-    },
+    const {'1': 'type', '3': 10, '4': 1, '5': 14, '6': '.etsme.ebox.Conversation.Type', '10': 'type'},
+    const {'1': 'current_message_text', '3': 11, '4': 1, '5': 9, '10': 'currentMessageText'},
+    const {'1': 'current_message_id', '3': 12, '4': 1, '5': 9, '10': 'currentMessageId'},
+    const {'1': 'current_message_time', '3': 13, '4': 1, '5': 3, '10': 'currentMessageTime'},
     const {'1': 'version', '3': 14, '4': 1, '5': 3, '10': 'version'},
     const {'1': 'status', '3': 15, '4': 1, '5': 5, '10': 'status'},
     const {'1': 'top', '3': 16, '4': 1, '5': 8, '10': 'top'},
-    const {
-      '1': 'first_four_members',
-      '3': 17,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.ConversationMember',
-      '10': 'firstFourMembers'
-    },
+    const {'1': 'first_four_members', '3': 17, '4': 3, '5': 11, '6': '.etsme.ebox.ConversationMember', '10': 'firstFourMembers'},
   ],
   '4': const [Conversation_Type$json],
 };
@@ -105,14 +60,7 @@ const CreateConversationRequest$json = const {
 const CreateConversationResponse$json = const {
   '1': 'CreateConversationResponse',
   '2': const [
-    const {
-      '1': 'conversation',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.Conversation',
-      '10': 'conversation'
-    },
+    const {'1': 'conversation', '3': 1, '4': 1, '5': 11, '6': '.etsme.ebox.Conversation', '10': 'conversation'},
     const {'1': 'invite_code', '3': 2, '4': 1, '5': 9, '10': 'inviteCode'},
   ],
 };
@@ -120,21 +68,8 @@ const CreateConversationResponse$json = const {
 const ListConversationRequest$json = const {
   '1': 'ListConversationRequest',
   '2': const [
-    const {
-      '1': 'type',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.ListConversationRequest.Type',
-      '10': 'type'
-    },
-    const {
-      '1': 'conversation_id',
-      '3': 2,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'type', '3': 1, '4': 1, '5': 14, '6': '.etsme.ebox.ListConversationRequest.Type', '10': 'type'},
+    const {'1': 'conversation_id', '3': 2, '4': 1, '5': 9, '10': 'conversationId'},
   ],
   '4': const [ListConversationRequest_Type$json],
 };
@@ -151,62 +86,29 @@ const ListConversationRequest_Type$json = const {
 const ListConversationResponse$json = const {
   '1': 'ListConversationResponse',
   '2': const [
-    const {
-      '1': 'conversations',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.Conversation',
-      '10': 'conversations'
-    },
+    const {'1': 'conversations', '3': 1, '4': 3, '5': 11, '6': '.etsme.ebox.Conversation', '10': 'conversations'},
   ],
 };
 
 const ListConversationMembersRequest$json = const {
   '1': 'ListConversationMembersRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
   ],
 };
 
 const ListConversationMembersResponse$json = const {
   '1': 'ListConversationMembersResponse',
   '2': const [
-    const {
-      '1': 'members',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.ConversationMember',
-      '10': 'members'
-    },
+    const {'1': 'members', '3': 1, '4': 3, '5': 11, '6': '.etsme.ebox.ConversationMember', '10': 'members'},
   ],
 };
 
 const GetConversationInviteCodeRequest$json = const {
   '1': 'GetConversationInviteCodeRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
-    const {
-      '1': 'type',
-      '3': 2,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.GetConversationInviteCodeRequest.Type',
-      '10': 'type'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
+    const {'1': 'type', '3': 2, '4': 1, '5': 14, '6': '.etsme.ebox.GetConversationInviteCodeRequest.Type', '10': 'type'},
   ],
   '4': const [GetConversationInviteCodeRequest_Type$json],
 };
@@ -229,13 +131,7 @@ const GetConversationInviteCodeResponse$json = const {
 const GetMemberProfileRequest$json = const {
   '1': 'GetMemberProfileRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'uid', '3': 2, '4': 1, '5': 3, '10': 'uid'},
   ],
 };
@@ -243,27 +139,14 @@ const GetMemberProfileRequest$json = const {
 const GetMemberProfileResponse$json = const {
   '1': 'GetMemberProfileResponse',
   '2': const [
-    const {
-      '1': 'profile',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.ConversationMember',
-      '10': 'profile'
-    },
+    const {'1': 'profile', '3': 1, '4': 1, '5': 11, '6': '.etsme.ebox.ConversationMember', '10': 'profile'},
   ],
 };
 
 const TopConversationRequest$json = const {
   '1': 'TopConversationRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'is_top', '3': 2, '4': 1, '5': 8, '10': 'isTop'},
   ],
 };
@@ -273,26 +156,14 @@ const UpdateMemberNoteRequest$json = const {
   '2': const [
     const {'1': 'member_id', '3': 1, '4': 1, '5': 3, '10': 'memberId'},
     const {'1': 'note_name', '3': 2, '4': 1, '5': 9, '10': 'noteName'},
-    const {
-      '1': 'conversation_id',
-      '3': 3,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 3, '4': 1, '5': 9, '10': 'conversationId'},
   ],
 };
 
 const UpdateConversationNameRequest$json = const {
   '1': 'UpdateConversationNameRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
   ],
 };
@@ -300,13 +171,7 @@ const UpdateConversationNameRequest$json = const {
 const UpdateProfileInConversationRequest$json = const {
   '1': 'UpdateProfileInConversationRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'nickname', '3': 2, '4': 1, '5': 9, '10': 'nickname'},
   ],
 };
@@ -314,26 +179,14 @@ const UpdateProfileInConversationRequest$json = const {
 const DisbandConversationRequest$json = const {
   '1': 'DisbandConversationRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
   ],
 };
 
 const KickOutConversationMemberRequest$json = const {
   '1': 'KickOutConversationMemberRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'member_id', '3': 2, '4': 3, '5': 3, '10': 'memberId'},
   ],
 };
@@ -341,12 +194,7 @@ const KickOutConversationMemberRequest$json = const {
 const LeaveConversationRequest$json = const {
   '1': 'LeaveConversationRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
   ],
 };
+

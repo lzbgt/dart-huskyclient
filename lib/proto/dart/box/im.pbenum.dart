@@ -10,46 +10,15 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 class InstantMessage_MessageType extends $pb.ProtobufEnum {
-  static const InstantMessage_MessageType TEXT = InstantMessage_MessageType._(
-      0,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'TEXT');
-  static const InstantMessage_MessageType AUDIO = InstantMessage_MessageType._(
-      1,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'AUDIO');
-  static const InstantMessage_MessageType IMAGE = InstantMessage_MessageType._(
-      2,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'IMAGE');
-  static const InstantMessage_MessageType VIDEO = InstantMessage_MessageType._(
-      3,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'VIDEO');
-  static const InstantMessage_MessageType IMAGE_LIST =
-      InstantMessage_MessageType._(
-          4,
-          const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-              ? ''
-              : 'IMAGE_LIST');
-  static const InstantMessage_MessageType NOTIFICATION =
-      InstantMessage_MessageType._(
-          5,
-          const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-              ? ''
-              : 'NOTIFICATION');
-  static const InstantMessage_MessageType FILE = InstantMessage_MessageType._(
-      6,
-      const $core.bool.fromEnvironment('protobuf.omit_enum_names')
-          ? ''
-          : 'FILE');
+  static const InstantMessage_MessageType TEXT = InstantMessage_MessageType._(0, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'TEXT');
+  static const InstantMessage_MessageType AUDIO = InstantMessage_MessageType._(1, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'AUDIO');
+  static const InstantMessage_MessageType IMAGE = InstantMessage_MessageType._(2, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'IMAGE');
+  static const InstantMessage_MessageType VIDEO = InstantMessage_MessageType._(3, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'VIDEO');
+  static const InstantMessage_MessageType IMAGE_LIST = InstantMessage_MessageType._(4, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'IMAGE_LIST');
+  static const InstantMessage_MessageType NOTIFICATION = InstantMessage_MessageType._(5, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'NOTIFICATION');
+  static const InstantMessage_MessageType FILE = InstantMessage_MessageType._(6, const $core.bool.fromEnvironment('protobuf.omit_enum_names') ? '' : 'FILE');
 
-  static const $core.List<InstantMessage_MessageType> values =
-      <InstantMessage_MessageType>[
+  static const $core.List<InstantMessage_MessageType> values = <InstantMessage_MessageType> [
     TEXT,
     AUDIO,
     IMAGE,
@@ -59,9 +28,9 @@ class InstantMessage_MessageType extends $pb.ProtobufEnum {
     FILE,
   ];
 
-  static final $core.Map<$core.int, InstantMessage_MessageType> _byValue =
-      $pb.ProtobufEnum.initByValue(values);
+  static final $core.Map<$core.int, InstantMessage_MessageType> _byValue = $pb.ProtobufEnum.initByValue(values);
   static InstantMessage_MessageType valueOf($core.int value) => _byValue[value];
 
   const InstantMessage_MessageType._($core.int v, $core.String n) : super(v, n);
 }
+

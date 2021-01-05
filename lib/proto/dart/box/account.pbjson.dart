@@ -28,13 +28,7 @@ const AuthenticationRequest$json = const {
   '2': const [
     const {'1': 'uid', '3': 1, '4': 1, '5': 3, '10': 'uid'},
     const {'1': 'box_token', '3': 2, '4': 1, '5': 9, '10': 'boxToken'},
-    const {
-      '1': 'conversation_id',
-      '3': 3,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 3, '4': 1, '5': 9, '10': 'conversationId'},
   ],
 };
 
@@ -48,14 +42,7 @@ const AuthenticationResponse$json = const {
 const GetProfileResponse$json = const {
   '1': 'GetProfileResponse',
   '2': const [
-    const {
-      '1': 'account',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.Account',
-      '10': 'account'
-    },
+    const {'1': 'account', '3': 1, '4': 1, '5': 11, '6': '.etsme.ebox.Account', '10': 'account'},
   ],
 };
 
@@ -86,14 +73,7 @@ const Account$json = const {
 const ListShareAccountResponse$json = const {
   '1': 'ListShareAccountResponse',
   '2': const [
-    const {
-      '1': 'share_accounts',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.Account',
-      '10': 'shareAccounts'
-    },
+    const {'1': 'share_accounts', '3': 1, '4': 3, '5': 11, '6': '.etsme.ebox.Account', '10': 'shareAccounts'},
   ],
 };
 
@@ -110,3 +90,4 @@ const UnbindAccountRequest$json = const {
     const {'1': 'verify_code', '3': 2, '4': 1, '5': 9, '10': 'verifyCode'},
   ],
 };
+

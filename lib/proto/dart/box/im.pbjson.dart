@@ -8,13 +8,7 @@
 const ListConversationMessageRequest$json = const {
   '1': 'ListConversationMessageRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'start_mid', '3': 2, '4': 1, '5': 9, '10': 'startMid'},
     const {'1': 'limit', '3': 3, '4': 1, '5': 5, '10': 'limit'},
     const {'1': 'later', '3': 4, '4': 1, '5': 8, '10': 'later'},
@@ -26,14 +20,7 @@ const ListConversationMessageRequest$json = const {
 const ListConversationMessageResponse$json = const {
   '1': 'ListConversationMessageResponse',
   '2': const [
-    const {
-      '1': 'messages',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.InstantMessage',
-      '10': 'messages'
-    },
+    const {'1': 'messages', '3': 1, '4': 3, '5': 11, '6': '.etsme.ebox.InstantMessage', '10': 'messages'},
     const {'1': 'uid', '3': 2, '4': 1, '5': 3, '10': 'uid'},
   ],
 };
@@ -41,14 +28,7 @@ const ListConversationMessageResponse$json = const {
 const InstantMessage$json = const {
   '1': 'InstantMessage',
   '2': const [
-    const {
-      '1': 'message_type',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.InstantMessage.MessageType',
-      '10': 'messageType'
-    },
+    const {'1': 'message_type', '3': 1, '4': 1, '5': 14, '6': '.etsme.ebox.InstantMessage.MessageType', '10': 'messageType'},
     const {'1': 'uuid', '3': 2, '4': 1, '5': 9, '10': 'uuid'},
     const {'1': 'mid', '3': 3, '4': 1, '5': 9, '10': 'mid'},
     const {'1': 'uid', '3': 4, '4': 1, '5': 3, '10': 'uid'},
@@ -56,21 +36,8 @@ const InstantMessage$json = const {
     const {'1': 'avatar_url', '3': 6, '4': 1, '5': 9, '10': 'avatarUrl'},
     const {'1': 'send_at', '3': 7, '4': 1, '5': 3, '10': 'sendAt'},
     const {'1': 'text', '3': 8, '4': 1, '5': 9, '10': 'text'},
-    const {
-      '1': 'attachment',
-      '3': 9,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.Attachment',
-      '10': 'attachment'
-    },
-    const {
-      '1': 'conversation_id',
-      '3': 10,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'attachment', '3': 9, '4': 3, '5': 11, '6': '.etsme.ebox.Attachment', '10': 'attachment'},
+    const {'1': 'conversation_id', '3': 10, '4': 1, '5': 9, '10': 'conversationId'},
   ],
   '4': const [InstantMessage_MessageType$json],
 };
@@ -96,36 +63,18 @@ const Attachment$json = const {
     const {'1': 'name', '3': 3, '4': 1, '5': 9, '10': 'name'},
     const {'1': 'width', '3': 4, '4': 1, '5': 5, '10': 'width'},
     const {'1': 'height', '3': 5, '4': 1, '5': 5, '10': 'height'},
-    const {
-      '1': 'play_millisecond',
-      '3': 6,
-      '4': 1,
-      '5': 3,
-      '10': 'playMillisecond'
-    },
+    const {'1': 'play_millisecond', '3': 6, '4': 1, '5': 3, '10': 'playMillisecond'},
     const {'1': 'byte_size', '3': 7, '4': 1, '5': 3, '10': 'byteSize'},
     const {'1': 'from_user_nwid', '3': 8, '4': 1, '5': 9, '10': 'fromUserNwid'},
-    const {
-      '1': 'from_user_node_id',
-      '3': 9,
-      '4': 1,
-      '5': 9,
-      '10': 'fromUserNodeId'
-    },
+    const {'1': 'from_user_node_id', '3': 9, '4': 1, '5': 9, '10': 'fromUserNodeId'},
+    const {'1': 'from_user_file_id', '3': 10, '4': 1, '5': 9, '10': 'fromUserFileId'},
   ],
 };
 
 const SendMessageRequest$json = const {
   '1': 'SendMessageRequest',
   '2': const [
-    const {
-      '1': 'message',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.InstantMessage',
-      '10': 'message'
-    },
+    const {'1': 'message', '3': 1, '4': 1, '5': 11, '6': '.etsme.ebox.InstantMessage', '10': 'message'},
     const {'1': 'uid', '3': 2, '4': 1, '5': 3, '10': 'uid'},
     const {'1': 'to', '3': 3, '4': 1, '5': 3, '10': 'to'},
   ],
@@ -136,19 +85,14 @@ const SendMessageResponse$json = const {
   '2': const [
     const {'1': 'mid', '3': 1, '4': 1, '5': 9, '10': 'mid'},
     const {'1': 'uid', '3': 2, '4': 1, '5': 3, '10': 'uid'},
+    const {'1': 'message', '3': 3, '4': 1, '5': 11, '6': '.etsme.ebox.InstantMessage', '10': 'message'},
   ],
 };
 
 const ReadMessageRequest$json = const {
   '1': 'ReadMessageRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'mid', '3': 2, '4': 1, '5': 9, '10': 'mid'},
     const {'1': 'uid', '3': 3, '4': 1, '5': 3, '10': 'uid'},
   ],
@@ -157,13 +101,7 @@ const ReadMessageRequest$json = const {
 const CancelSendMessageRequest$json = const {
   '1': 'CancelSendMessageRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'mid', '3': 2, '4': 1, '5': 9, '10': 'mid'},
     const {'1': 'uid', '3': 3, '4': 1, '5': 3, '10': 'uid'},
     const {'1': 'to', '3': 4, '4': 1, '5': 3, '10': 'to'},
@@ -173,13 +111,7 @@ const CancelSendMessageRequest$json = const {
 const ListMessageAttachmentRequest$json = const {
   '1': 'ListMessageAttachmentRequest',
   '2': const [
-    const {
-      '1': 'conversation_id',
-      '3': 1,
-      '4': 1,
-      '5': 9,
-      '10': 'conversationId'
-    },
+    const {'1': 'conversation_id', '3': 1, '4': 1, '5': 9, '10': 'conversationId'},
     const {'1': 'mid', '3': 2, '4': 1, '5': 9, '10': 'mid'},
     const {'1': 'page', '3': 3, '4': 1, '5': 5, '10': 'page'},
     const {'1': 'size', '3': 4, '4': 1, '5': 5, '10': 'size'},
@@ -189,14 +121,8 @@ const ListMessageAttachmentRequest$json = const {
 const ListMessageAttachmentResponse$json = const {
   '1': 'ListMessageAttachmentResponse',
   '2': const [
-    const {
-      '1': 'attachment',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.etsme.ebox.Attachment',
-      '10': 'attachment'
-    },
+    const {'1': 'attachment', '3': 1, '4': 3, '5': 11, '6': '.etsme.ebox.Attachment', '10': 'attachment'},
     const {'1': 'total', '3': 2, '4': 1, '5': 5, '10': 'total'},
   ],
 };
+

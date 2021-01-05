@@ -21,3 +21,4 @@ const Pagination$json = const {
     const {'1': 'total', '3': 3, '4': 1, '5': 5, '10': 'total'},
   ],
 };
+

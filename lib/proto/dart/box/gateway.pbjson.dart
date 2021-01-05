@@ -21,14 +21,7 @@ const GtwUpdaterContext$json = const {
   '1': 'GtwUpdaterContext',
   '2': const [
     const {'1': 'action', '3': 1, '4': 1, '5': 5, '10': 'action'},
-    const {
-      '1': 'env',
-      '3': 2,
-      '4': 1,
-      '5': 11,
-      '6': '.etsme.ebox.gateway.UpdaterChangeEnv',
-      '10': 'env'
-    },
+    const {'1': 'env', '3': 2, '4': 1, '5': 11, '6': '.etsme.ebox.gateway.UpdaterChangeEnv', '10': 'env'},
     const {'1': 'packageloc', '3': 3, '4': 1, '5': 9, '10': 'packageloc'},
     const {'1': 'version', '3': 4, '4': 1, '5': 9, '10': 'version'},
     const {'1': 'appname', '3': 5, '4': 1, '5': 9, '10': 'appname'},
@@ -46,14 +39,7 @@ const UpdaterChangeEnv$json = const {
 const GtwApiRequest$json = const {
   '1': 'GtwApiRequest',
   '2': const [
-    const {
-      '1': 'operation',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.gateway.GtwOperationId',
-      '10': 'operation'
-    },
+    const {'1': 'operation', '3': 1, '4': 1, '5': 14, '6': '.etsme.ebox.gateway.GtwOperationId', '10': 'operation'},
     const {'1': 'content', '3': 2, '4': 1, '5': 12, '10': 'content'},
     const {'1': 'serverVersion', '3': 3, '4': 1, '5': 5, '10': 'serverVersion'},
   ],
@@ -62,14 +48,7 @@ const GtwApiRequest$json = const {
 const GtwApiResponse$json = const {
   '1': 'GtwApiResponse',
   '2': const [
-    const {
-      '1': 'operation',
-      '3': 1,
-      '4': 1,
-      '5': 14,
-      '6': '.etsme.ebox.gateway.GtwOperationId',
-      '10': 'operation'
-    },
+    const {'1': 'operation', '3': 1, '4': 1, '5': 14, '6': '.etsme.ebox.gateway.GtwOperationId', '10': 'operation'},
     const {'1': 'content', '3': 2, '4': 1, '5': 12, '10': 'content'},
     const {'1': 'message', '3': 3, '4': 1, '5': 9, '10': 'message'},
     const {'1': 'code', '3': 4, '4': 1, '5': 5, '10': 'code'},
@@ -105,3 +84,4 @@ const GtwNetInfoResponse$json = const {
     const {'1': 'nodeid', '3': 3, '4': 1, '5': 9, '10': 'nodeid'},
   ],
 };
+
